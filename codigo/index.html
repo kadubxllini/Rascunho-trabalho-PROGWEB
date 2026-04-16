@@ -1,44 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
 <link rel="stylesheet" href="style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja Online</title>
-</head>
 <body>
-
-    <div class="central-login">
-      <div class="central-header">
-        <h1>Loja Online</h1>
-        <h2>Realize seu login para acessar a loja</h2>
-        <hr>
-      </div>
-      
-      <div class="input-login">
-        <input type="text" placeholder="Usuário" required>
-      </div>
-      <div class="input-senha">
-        <input type="password" placeholder="Senha" required>
-      </div>
-      
-      <div class="check-button">
-        <label>
-          <input type="checkbox" value="1">
-          Lembrar senha
-        </label>
+    <div class="main-container">
         
-        <label>
-          <input type="checkbox" value="1">
-          Ao continuar, você concorda com as Condições de Uso e a Notificação de privacidade da loja.
-        </label>
+      <div class="left-side">
+        <div class="logo">Loja Online</div>
+        <h1 class="welcome-text">Bem-vindo!</h1>
       </div>
-      
-      <div class="central-button">
-        <button type="submit">LOGIN</button>
+
+      <div class="right-side">
+        <div class="central-login">
+          <div class="central-header">
+            <h1>Faça login para acessar o nosso site.</h1>
+          </div>
+          
+          <div class="input-login">
+            <input type="text" placeholder="Username" class="user-input" required>
+          </div>
+          <div class="input-senha">
+            <input type="password" placeholder="Password" class="senha-input" required>
+          </div>
+
+          <div class="check-button">
+            <label>
+              <input type="checkbox" value="1">
+              Remember Me
+            </label>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+          </div>
+
+          <div class="central-button">
+            <button type="submit">Log in</button>
+          </div>
+        </div>
       </div>
 
     </div>
-
 </body>
-</html>
