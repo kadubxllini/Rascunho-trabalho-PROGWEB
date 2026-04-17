@@ -6,7 +6,7 @@ function fazerLogin(event) {
     const senha = document.getElementById('js-senha').value;
 
     if (user === 'login' && senha === 'senha') {
-        window.location.href = 'loja/loja.html';
+        window.location.href = 'loja.html';
 
     } else {
         alert('E-mail ou senha inválidos');
