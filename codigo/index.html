@@ -1,38 +1,60 @@
-<link rel="stylesheet" href="style.css">
-<body>
-    <div class="main-container">
-        
-      <div class="left-side">
-        <div class="logo">Loja Online</div>
-        <h1 class="welcome-text">Bem-vindo!</h1>
-      </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Loja Online</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
 
-      <div class="right-side">
-        <div class="central-login">
-          <div class="central-header">
-            <h1>Faça login para acessar o nosso site.</h1>
-          </div>
-          
+<body>
+
+ <!-- BLOCO PRINCIPAL -->
+  <div class="main-container">
+
+    <!-- BLOCO ESQUERDO -->
+    <div class="left-side">
+      <h2>Loja Online</h2>
+      <h1>Bem-vindo!</h1>
+    </div>
+
+    <!-- BLOCO DIREITO -->
+    <div class="right-side">
+      <div class="central-login">
+        <div class="central-header">
+          <h1>Faça login para acessar o nosso site.</h1>
+        </div>
+
+        <form onsubmit="fazerLogin(event)">
+
+          <!-- CAMPO USUÁRIO / SENHA -->
           <div class="input-login">
-            <input type="text" placeholder="Username" class="user-input" required>
+            <input type="text" id="js-user" placeholder="User" class="user-input" required>
           </div>
           <div class="input-senha">
-            <input type="password" placeholder="Password" class="senha-input" required>
+            <input type="password" id="js-senha" placeholder="Senha" class="senha-input" required>
           </div>
 
+          <!-- CAMPO CHECKBOX / ESQUECI SENHA -->
           <div class="check-button">
             <label>
               <input type="checkbox" value="1">
-              Remember Me
+              Lembrar de mim
             </label>
-            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="#" class="forgot-password">Esqueci minha senha</a>
           </div>
 
+          <!-- CAMPO LOGIN -->
           <div class="central-button">
             <button type="submit">Log in</button>
           </div>
-        </div>
+          
+        </form>
       </div>
-
     </div>
+  </div>
+
+<script src="login.js"></script>
 </body>
+</html>
