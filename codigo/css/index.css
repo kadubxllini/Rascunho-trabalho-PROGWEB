@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box; /*manter tamanho limite definido*/
+  margin: 0; /*tirar espaços nas bordas*/
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex; /*centralizar*/
+  justify-content: center; /*horizontal*/
+  align-items: center; /*vertical*/
+  min-height: 100vh; /*altura da tela*/
+  background: url('../img/fundo.jpg');
+  background-size: cover;
+}
+
+/* CONTORNO QUE UNE AS 2 TELAS */
+.main-container {
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  background-color: #111111;
+
+  overflow: hidden;
+  border-radius: 40px;
+  border: 8px solid #111111;
+  box-shadow: 0 10px 30px #9a0eeb;
+}
+
+/* LADO PRETO */
+.left-side {
+  flex: 50; /*pega 50% do main-container*/
+  color: white;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column; /*organiza verticalmente ao inves de horizontalmente*/
+  justify-content: space-between;
+  
+  background: url('../img/fundo-login.jpg');
+  background-size: cover;
+}
+
+/* LADO BRANCO */
+.right-side {
+  flex: 50;
+  background-color: #E3E3E3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.central-header {
+  font-size: 18px;
+  margin-bottom: 60px;
+  width: 435px;
+}
+
+/*----------------------<LOGIN----------------------*/
+.input-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.input-login .user-input {
+  background-color: #C4C4C4;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 15px;
+  padding: 6px 35px;
+  border-radius: 16px;
+  border: none;
+  width: 250px; /*tamanho do input*/
+  transform: scale(1.2); /*aumenta a proporção em 20%*/
+
+  background-image: url('../img/user.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px;
+}
+.input-login .user-input:focus {
+  outline: #9a0eeb outset 1px; /*color style width*/
+}
+/*----------------------LOGIN>----------------------*/
+
+.central-button {
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.2);
+}
+
+button {
+  background-color: #9a0eeb;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #7105b0;
+}
+button:active {
+    background-color: #4d0378;
+}
